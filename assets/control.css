@@ -16,11 +16,12 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap   ;
+  flex-wrap: wrap;
   
 }
 
 .heading {
+  margin-left: 50px;
   font-size: 60px;
   color: white;
 }
@@ -35,6 +36,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 text-indent: 100PX;
+padding: 100px;
 
 }
 
@@ -143,7 +145,7 @@ button a{
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #fff;
+    background-color: #12172b;
     border-color: #dee2e6 #dee2e6 #fff;
   }
   .nav-tabs .dropdown-menu {
@@ -282,6 +284,13 @@ button a{
   }
   
   @media (min-width: 576px) {
+    .heading{
+      font-size: 15px;
+    }
+    .user-name{
+      text-align: center;
+      text-justify: auto;
+    }
     .navbar-expand-sm {
       flex-wrap: nowrap;
       justify-content: flex-start;
@@ -684,7 +693,7 @@ button a{
     height: 100%;
     transition: all 0.4s ease 0s;
     transform: translateX(250px);
-    background: rgba(255, 255, 255);
+    background: white;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
   
@@ -718,7 +727,7 @@ button a{
   
   .sidebar-nav > .sidebar-brand {
     font-size: 1.2rem;
-    background: rgba(1, 1, 1, 0.1);
+    background:white;
     height: 80px;
     line-height: 50px;
     padding-top: 15px;
@@ -734,7 +743,7 @@ button a{
   }
   
   .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: #12172b;
     background: none;
   }
   
