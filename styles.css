@@ -245,7 +245,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #04414d;
+  color: white;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11661,6 +11661,7 @@ html {
 .callout {
   
   padding: 12rem 0;
+  background-color: #111;
   /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/texture.svg); */
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/back.jpg"); */
   /* background-color: #000; */
@@ -11700,7 +11701,7 @@ html {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 5px solid yellow;
   outline: none;
   filter: saturate(300%);
   display: flex;
@@ -11720,11 +11721,11 @@ html {
 }
 .quote{
   
-  color: black;
+  color: white;
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  margin-left: 200px;  
+  margin-left: 100px;  
 }
 
 #quoteS
@@ -12355,12 +12356,12 @@ h2:first-child {
   text-justify: inter-word
 }
 .underlined {
-  color: black;
+  color: white;
   flex: 1;
   font-size: 2em;
-  line-height: 1.2;
+  line-height: 1.5;
   text-decoration: none;
-  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-image: linear-gradient(to right, yellow 0, yellow 10%);
   background-position: 0 1.2em;
   background-size: 0 100%;
   background-repeat: no-repeat;
@@ -12370,20 +12371,31 @@ h2:first-child {
   background-size: 100% 100%;
 }
 .underlined--thin {
-  background-image: linear-gradient(to right, black 0, black 100%);
+  background-image: linear-gradient(to right, white 0, white 100%);
 }
 .underlined--thick {
-  background-position: 0 -0.3em;
+  background-position: 0 0.3em;
 }
 .underlined--offset {
+  color: #f6ff00;
   background-position: 0 0.2em;
-  box-shadow: inset 0 -0.5em 0 0 white;
+  box-shadow: inset 0 -0.5em 0 0 #ffffff2e;
+}
+.underlined--thick:hover{
+  color: black;
+}
+.underlined--reverse:hover{
+  color: black;
+}
+.underlined--gradient:hover{
+  color: black;
 }
 .underlined--gradient {
   background-position: 0 -0.1em;
   background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
 }
 .underlined--reverse {
+  
   background-position: 100% -0.1em;
   transition: background 1s;
   background-image: linear-gradient(to right, yellow 0, yellow 100%);
@@ -12471,6 +12483,65 @@ h2:first-child {
 
 
 
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 
 
 
